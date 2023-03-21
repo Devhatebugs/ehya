@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EHYA</title>
+</head>
+<style>
+
+.container {
+    width: 1920px;
+    margin: auto;
+}
+
+
+h1 {
+    font-size: 48px;
+    font-family: 'HK Grotesk', sans-serif;
+    font-weight: 610;
+    line-height: 1.32;
+    letter-spacing: 2px;
+    color: #183B56;
+}
+
+.firstH {
+    font-size: 36px;
+}
+
+.secondH {
+    font-size: 32px;
+}
+
+.thirdH {
+    font-size: 24px;
+}
+
+.fourthH {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.fifthH {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 2em;
+    color: #5A7184;
+}
+
+.oneP {
+    font-size: 16px;
+}
+
+.twoP {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1565D8;
+}
+
+.blueP {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #00B8D9;
+}
+
+/* HERO */
+
+#hero {
+    height: 843px;
+}
+
+.hero-container {
+    margin: auto;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    padding-top: 24px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #183B56;
+}
+
+.navbar-brand {
+    padding-right: 33.33%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.navbar-title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+button {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #1565D8;
+    border: 2px solid #1565D8;
+    background-color: #fff;
+    width: 131px;
+    height: 48px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #1565D8;
+}
+
+button:hover a {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #1565D8;
+}
+
+/* DETAILS */
+.details {
+    width: 26%;
+}
+
+/* PHOTO */
+
+.photo {
+    float: right;
+    position: relative;
+    bottom: 450px;
+    padding-top: 62px;
+}
+
+#pat {
+    position: relative;
+    left: 35px;
+    bottom: 310px;
+}
+
+#mob {
+    position: relative;
+    top: 65px;
+    right: 42px;
+    z-index: 2;
+}
+
+#scr {
+    position: absolute;
+    right: -195px;
+    bottom: -40px;
+    z-index: 1;
+}
+
+#oval {
+    filter: opacity(1);
+    position: relative;
+    top: 150px;
+    left: 125px;
+}
+
+.btn {
+    font-size: 18px;
+    background-color: #183B56;
+    color: #fff;
+    border-radius: 8px;
+    width: 243px;
+    height: 56px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #FAFDFF;
+    color: #183B56;
+    font-weight: bold;
+    border: 2px solid #183B56;
+}
+
+#ab {
+   left: auto; 
+}
+
+.button2 {
+    color: #5A7184;
+    background-color: #FAFDFF;
+    border: 2px solid #707070;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    margin-top: 60px;
+}
+
+.button2:hover {
+    background-color: #5A7184;
+    color: #FAFDFF;
+}
+
+/* PARTNERS */
+
+#partner {
+    margin-top: 10%;
+    height: 467px;
+}
+
+.partner-container {
+    height: 270px;
+    padding: 100px 218px 97px 140.65px;
+}
+
+.partner-box {
+    text-align: center;
+    padding-left: 9.35px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 24px;
+}
+
+.button3 {
+    background-color: #FC5A5A;
+    width: 159px;
+    height: 53px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+#last_of_nth {
+    display: block;
+}
+
+/* SERVICES */
+
+#services {
+    background-color: #F9FBFE;
+    height: 576px;
+}
+
+.services-subheader {
+    display: flex;
+}
+
+.services-right {
+    padding-top: 20px;
+    padding-left: 60%;
+}
+
+.card-container {
+    padding-top: 56px;
+    display: flex;
+}
+
+.card {
+    border: 3px solid #E5EAF4;
+    border-radius: 16px;
+    display: flex;
+}
+
+.card img {
+    padding: 25px;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+    height: 919px;
+}
+
+.arrows {
+    display: none;
+}
+
+.box-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.box {
+    border-radius: 5px;
+    border: 1px solid #DDE6F4;
+    margin-right: 30px;
+}
+
+#boxer {
+    background-color: #FC5A5A;
+    width: 360px;
+    height: 524px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* TESTIMONIALS */
+
+#reviews {
+    height: 562px;
+}
+
+.reviews-content {
+    height: 402px;
+    margin: auto;
+}
+
+.test-container {
+    display: inline-flex;
+}
+
+.test {
+    border: 3px solid #E5EAF4;
+    width: 555px;
+    height: 267px;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.test-box {
+    padding: 41px 30px 36px 40px;
+}
+
+.test-content {
+    display: flex;
+    justify-content: center;
+}
+
+.test-right {
+    margin-top: -20px;
+    padding-left: 20px;
+}
+
+.test-title {
+    margin-top: -20px;
+}
+
+.atest {
+    display: none;
+}
+
+/* SOCIAL MEDIA */
+
+#social {
+    height: 499px;
+}
+
+.social-content {
+    margin: auto;
+    text-align: center;
+    height: 379px;
+}
+
+.media-container {
+    display: flex;
+    margin-top: 72px;
+    justify-content: center;
+}
+
+.media {
+    height: 232px;
+    margin-right: 30px;
+}
+
+.media a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #1565D8;
+}
+
+#i2 {
+    margin-left: 10px;
+    color: #1565D8;
+}
+
+/* CHALLENGES */
+
+#challenge {
+    height: 444px;
+    text-align: center;
+    background-color: #00B8D9;
+}
+
+.challenge-container {
+    padding-top: 72px;
+}
+
+.challenge-title h1 {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.challenge-subtitle p {
+    color: #fff;
+    line-height: 1.34;
+}
+
+.challenge-btn{
+    padding-top: 54px;
+}
+
+.challenge-btn button {
+    font-size: 18px;
+    color: #183B56;
+    border: none;
+    width: 220px;
+    height: 48px;
+    border-radius: 10px;
+}
+
+.challenge-btn button:hover {
+    color: #fff;
+    background-color: #183B56;
+}
+
+button {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #1565D8;
+    border: 2px solid #1565D8;
+    background-color: #fff;
+    width: 131px;
+    height: 48px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #1565D8;
+}
+
+#imgc {
+    position: relative;
+    z-index: -1;
+    left: 20%;
+    bottom: 390px;
+    filter: opacity(1);
+}
+
+/* FOOTER */
+
+a {
+    text-decoration: none;
+    color: #959EAD;
+}
+
+#footer {
+    height: 670px;
+    background-color: #0D2436;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-container {
+    width: 1920px;
+    height: 670px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-top {
+    height: 262px;
+    padding-top: 128px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-left {
+    padding-right: 52px;
+}
+
+.footer-logo {
+    padding-bottom: 31px;
+}
+
+.footer-title {
+    width: 60%;
+    padding-bottom: 23px;
+}
+
+.footer-right {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.lists {
+    padding-right: 30px;
+}
+
+.boxs {
+    display: block;
+    padding-top: 12px;
+    padding-inline-start: 0;
+}
+
+.img1 {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 64px;
+}
+
+</style>
+<body>
+
+<div class="container">
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="navbar">
+                <div class="navbar-brand">
+                    <img src="assets/images/Header-Logo.png" alt="EHYA">
+                </div>
+                <div class="navbar-bar">
+                    <div class="navbar-title">Home</div>
+                    <div class="navbar-title">Landings<i class="fa-solid fa-angle-down"></i></div>
+                    <div class="navbar-title">Pages<i class="fa-solid fa-angle-down"></i></div>
+                    <div class="navbar-title">Docs</div>
+                    <div class="navbar-title">Help</div>
+                    <button><a href="#">Get it now</a></button>
+                </div>
+            </div>
+            <div class="details">
+                <h1>Number #1, Southern Asia Digital Product Agency</h1>
+                <p>We bring the results while helping you acheive cost and time savings without taking on risk or management overhead.</p>
+                <button class="btn"><a href="#">See Our Portfolio</a></button>
+            </div>
+            <div class="photo">
+                <img id="pat" src="assets/images/Pattern.png" alt="Grey Dots"> 
+                <img id="mob" src="assets/images/iphone.png" alt="Mobile">
+                <img id="scr" src="assets/images/Macbook.png" alt="Screen">
+                <img id="oval" src="assets/images/Oval1.png" alt="Effect">
+            </div>
+            <button class="button2"><a id="ab" href="#part"></a><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </section>
+
+    <!-- PARTNERS -->
+    <section id="partner">
+        <div class="partner-container">
+            <div class="partner-box">
+                <p class="blueP">OUR PARTNER</p>
+                <div class="partner-content">
+                    <div class="left">
+                        <h1 class="firstH">We've Worked with them, We Trust Each Other</h1>
+                    </div>
+                    <div class="right">
+                        <p>Our team provides high-level creative education to a global audience of students, educators, and entrepreneurs all over the world</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-container">
+                <button class="button3"></button>
+                <button class="button3"></button>
+                <button class="button3"></button>
+                <button class="button3"></button>
+                <button id="last_of_nth" class="button3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="services-container">
+            <div class="services-content">
+                <div class="services-header">
+                    <p class="blueP">SERVICES</p>
+                </div>
+                <div class="services-subheader">
+                    <div class="services-left">
+                        <h1 class="firstH">What We do</h1>
+                    </div>
+                    <div class="services-right">
+                        <p>We work together with our client to execute impactful product.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-left">
+                        <img src="assets/images/circle.png" alt="Brand">
+                    </div>
+                    <div class="card-right">
+                        <h1 class="fourthH">Branding Identity</h1>
+                        <p class="oneP">We make logo and concept for your brand needs.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-left">
+                        <img src="assets/images/hexagon.png" alt="Development">
+                    </div>
+                    <div class="card-right">
+                        <h1 class="fourthH">Development</h1>
+                        <p class="oneP">We code your apps, website and dashboard to you.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-left">
+                        <img src="assets/images/pentagon.png" alt="Design">
+                    </div>
+                    <div class="card-right">
+                        <h1 class="fourthH">UI/UX Design</h1>
+                        <p class="oneP">Making beautiful and intuitive design digital product.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-left">
+                        <img src="assets/images/square.png" alt="Asset">
+                    </div>
+                    <div class="card-right">
+                        <h1 class="fourthH">Microstock</h1>
+                        <p class="oneP">We produce million asset for your business needs.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-left">
+                        <img src="assets/images/triangle.png" alt="Media">
+                    </div>
+                    <div class="card-right">
+                        <h1 class="fourthH">Social Media</h1>
+                        <p class="oneP">Planning and maintenance social media for reach audience</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-left">
+                        <img src="assets/images/rhombus.png" alt="Research">
+                    </div>
+                    <div class="card-right">
+                        <h1 class="fourthH">Research</h1>
+                        <p class="oneP">Helping research startup or brand to business needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+            <div class="portfolio-content">
+                <p class="blueP">PORTFOLIO</p>
+                <h1 class="firstH">Our Projects</h1>
+                <div class="arrows">
+                    <i id="P1" class="fa-solid fa-arrow-left"></i>
+                    <i id="P2" class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="box-container">
+                    <div class="box">
+                        <div id="boxer"></div>
+                        <p class="twoP">Website, Landing</p>
+                        <h1 class="secondH">Website Project</h1>
+                    </div>
+                    <div class="box">
+                        <div id="boxer"></div>
+                        <p class="twoP">Dashboard, UI/UX Design</p>
+                        <h1 class="secondH">Dashboard Project</h1>
+                    </div>
+                    <div class="box">
+                        <div id="boxer"></div>
+                        <p class="twoP">Apps, Mobile, iOs</p>
+                        <h1 class="secondH">Apps Project</h1>
+                    </div>
+                    <div class="box">
+                        <div id="boxer"></div>
+                        <p class="twoP">Illustration, Instagram</p>
+                        <h1 class="secondH">Illustration Project</h1>
+                    </div>
+                    <div class="box">
+                        <div id="boxer"></div>
+                        <p class="twoP">Research, SEO</p>
+                        <h1 class="secondH">SEO Project</h1>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="reviews">
+        <div class="reviews-container">
+            <p class="blueP">TESTIMONIAL</p>
+            <h1 class="firstH">What People Say about Us</h1>
+            <div class="test-container">
+                <div class="test">
+                    <div class="test-box">
+                        <div class="test-content">
+                            <div class="test-image">
+                                <img src="assets/images/Photo.png" alt="Indicator">
+                            </div>
+                            <div class="test-right">
+                                <div class="test-name">
+                                    <h1 class="thirdH">Jaquon Hart</h1>
+                                </div>
+                                <div class="test-title">
+                                    <p class="oneP">VP Manager - Lizlle Company</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Their UI/UX skills and experience, were key to identifying potential friction points within our Business Processes, which they fixed or streamlined beautiful."</p>
+                    </div>
+                </div>
+                <div class="test">
+                    <div class="test-box">
+                        <div class="test-content">
+                            <div class="test-image">
+                                <img src="assets/images/Photo.png" alt="Indicator">
+                            </div>
+                            <div class="test-right">
+                                <div class="test-name">
+                                    <h1 class="thirdH">Valdemar Forsberg</h1>
+                                </div>
+                                <div class="test-title">
+                                    <p class="oneP">Founder Digitac Finance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Ehya pushed us to think beyond our initial scope and imagination while ensuring that the design and shape of the platform are continually adjusted based on  data.</p>
+                    </div>
+                </div>
+                <div class="test">
+                    <div class="test-box">
+                        <div class="test-content">
+                            <div class="test-image">
+                                <img src="assets/images/Photo.png" alt="Indicator">
+                            </div>
+                            <div class="test-right">
+                                <div class="test-name">
+                                    <h1 class="thirdH">Valdemar Forsberg</h1>
+                                </div>
+                                <div class="test-title">
+                                    <p class="oneP">Founder Digitac Finance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Ehya pushed us to think beyond our initial scope and imagination while ensuring that the design and shape of the platform are continually adjusted based on  data.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="atest" href="#test"><img src="assets/images/Button.png" alt="button"></a>
+        </div>
+    </section>
+
+    <!-- SOCIAL MEDIA -->
+    <section id="social">
+        <div class="social-content">
+            <p class="blueP">OUR SOCIAL MEDIA</p>
+            <h1 class="firstH">Let's be Friends</h1>
+            <div class="media-container">
+                <div class="media">
+                    <img src="assets/images/Border.png" alt="Border">
+                    <h1 class="fifthH">Instagram</h1>
+                    <p id="oneP">For our Portfolio and Daily activities in office</p>
+                    <a href="#">Follow Us<i id="i2" class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="media">
+                    <img src="assets/images/Border.png" alt="Border">
+                    <h1 class="fifthH">Twitter</h1>
+                    <p id="oneP">For random thoughts and funny things</p>
+                    <a href="#">Follow Us<i id="i2" class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="media">
+                    <img src="assets/images/Border.png" alt="Border">
+                    <h1 class="fifthH">Dribble</h1>
+                    <p id="oneP">For Updated & Detailed all of Our Portfolio</p>
+                    <a href="#">Follow Us<i id="i2" class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="media">
+                    <img src="assets/images/Border.png" alt="Border">
+                    <h1 class="fifthH">Youtube</h1>
+                    <p id="oneP">For our video about tutorial and tips on design industry</p>
+                    <a href="#">Subscribe<i id="i2" class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    
+    <!-- CHALLENGES -->
+    <section id="challenge">
+        <div class="challenge-container">
+            <div class="challenge-title">
+                <h1>We're Ready for a Challenging Project</h1>
+            </div>
+            <div class="challenge-subtitle">
+                <p>Send us your brief and tell your project too. We are ready to help all you need</p>
+            </div>
+            <div class="challenge-btn">
+                <button>Let's Discuss it!</button>
+            </div>
+            <!-- <div class="challenge-image">
+                <img id="imgc" src="assets/images/Oval2.png" alt="Effect">
+            </div> -->
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <section id="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <a href="#"><img src="assets/images/Footer-Logo.png" alt="FooterLogo"></a>
+                    </div>
+                    <div class="footer-title">
+                        <p class="oneP">Build a modern and creative website with crealand</p>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><img class="img1" src="assets/images/Avatar.png" alt="Small Circle"></a>
+                        <a href="#"><img class="img1" src="assets/images/Avatar.png" alt="Small Circle"></a>
+                        <a href="#"><img class="img1" src="assets/images/Avatar.png" alt="Small Circle"></a>
+                        <a href="#"><img class="img1" src="assets/images/Avatar.png" alt="Small Circle"></a>
+                        <a href="#"><img class="img1" id="img1" src="assets/images/Avatar.png" alt="Small Circle"></a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="lists">
+                        <p style="font-weight: 700; line-height: 0;">Product</p>
+                        <ul class="boxs">
+                            <li><p class="oneP"><a href="#">Landingpage</a></p></li>
+                            <li><p class="oneP"><a href="#">Features</a></p></li>
+                            <li><p class="oneP"><a href="#">Documentation</a></p></li>
+                            <li><p class="oneP"><a href="#">Referral Program</a></p></li>
+                            <li><p class="oneP"><a href="#">Pricing</a></p></li>
+                        </ul>
+                    </div>
+                    <div class="lists">
+                        <p style="font-weight: 700; line-height: 0;">Services</p>
+                        <ul class="boxs">
+                            <li><p class="oneP"><a href="#">Documentation</a></p></li>
+                            <li><p class="oneP"><a href="#">Design</a></p></li>
+                            <li><p class="oneP"><a href="#">Themes</a></p></li>
+                            <li><p class="oneP"><a href="#">Illustrations</a></p></li>
+                            <li><p class="oneP"><a href="#">UI Kit</a></p></li>
+                        </ul>
+                    </div>
+                    <div class="lists">
+                        <p style="font-weight: 700; line-height: 0;">Company</p>
+                        <ul class="boxs">
+                            <li><p class="oneP"><a href="#">About</a></p></li>
+                            <li><p class="oneP"><a href="#">Terms</a></p></li>
+                            <li><p class="oneP"><a href="#">Privacy Policy</a></p></li>
+                            <li><p class="oneP"><a href="#">Careers</a></p></li>
+                        </ul>
+                    </div>
+                    <div class="lists">
+                        <p style="font-weight: 700; line-height: 0;">More</p>
+                        <ul class="boxs">
+                            <li><p class="oneP"><a href="#">Documentation</a></p></li>
+                            <li><p class="oneP"><a href="#">License</a></p></li>
+                            <li><p class="oneP"><a href="#">Changelog</a></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <img src="assets/images/Heart.png" alt="Heart">
+                <p class="oneP" style="font-weight: 600;">Copyright &#169; 2019.Crafted with love.</p>
+            </div>   
+        </div>
+    </section>
+
+</body>
+</html>

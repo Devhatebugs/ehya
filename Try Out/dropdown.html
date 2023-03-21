@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dropdown Menu</title>
+</head>
+<style>
+    #main {
+    position: relative;
+    list-style: none;
+    background: #3aafde;
+    color: #000;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0;
+    margin: 50px auto;
+}
+
+#main li {
+    font-size: 0.8rem;
+    display: inline-block;
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer;
+    z-index: 4;
+    transition: 0.3s;
+    min-width: 120px;
+}
+
+li:hover {
+    background: #92d3ed !important;
+}
+
+.drop {
+    overflow: hidden;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    top: 48px;
+}
+
+.drop div {
+    transform: translate(0, -100%);
+    transition: all 0.5s 0.1s;
+    position: relative;
+}
+
+.drop li {
+    display: block;
+    padding: 0;
+    width: 100%;
+    background: #3aafde;
+}
+
+#main li:nth-child(3):hover ul div {
+    transform: translate(0, 0);
+}
+</style>
+<body>
+    <nav>
+        <ul id="main">
+            <li>Home</li>
+            <li>About</li>
+            <li>Skills
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="drop">
+                    <div>
+                    <li>CSS</li>
+                    <li>BS</li>
+                    <li>HTML</li>
+                    </div>
+                </ul>
+            </li>
+            <li>Contact</li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+</body>
+</html>
